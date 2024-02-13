@@ -16,8 +16,13 @@ function fillform($elvalue1,$treas1,$yr){
     }
     for (i=3;i<4;i++){
         id=elid[i];
-        el=document.getElementById(id);
-        el.value=elvalue[i];
+        form=document.getElementById('myform');
+           if(elvalue[i]=='Yes'){
+            form.bacc.value='Yes';
+        }
+        else{
+            form.bacc.value='No';
+        }
     }
     for (i=4;i<13;i++){
         id=elid[i];
