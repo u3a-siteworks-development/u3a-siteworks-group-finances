@@ -249,14 +249,14 @@ function get_base_form_code(){
 		//$content=$content. "<tr style='display:none;' class='hidden'><td>Year</td><td><input type='text' id='yr' name='yr' //value='".$finvalues['Year']."'></td></tr>";
 		//$content=$content. "<tr style='display:none;' class='hidden'><td>GroupID</td><td><input type='text' id='gid' name='gid' value=".$finvalues['gpid']."></td></tr>";
 		if ($finvalues['Bank']=='Yes'){
-			$content=$content. "<tr><td><label for='bacc'>Does your Group have a Bank Account?</label></td><td class='textinput'><input type='radio'id='bacc' name='bacc' value='Yes' checked> Yes
-			<input type='radio'id='bacc'  name='bacc' value='No'> No
+			$content=$content. "<tr><td><label for='bacc'>Does your Group have a Bank Account?</label></td><td class='textinput'><input type='radio' name='bacc' value='Yes' checked> Yes
+			<input type='radio' name='bacc' value='No'> No
 			</td></tr>";
 		}
 		else{
 			$content=$content. "<tr><td><label for='bacc'>Does your Group have a Bank Account?</label></td><td class='textinput'>
-			<input type='radio'id='bacc' name='bacc' value='Yes' > Yes
-			<input type='radio'id='bacc'  name='bacc' value='No' checked> No
+			<input type='radio' name='bacc' value='Yes' > Yes
+			<input type='radio'  name='bacc' value='No' checked> No
 			</td></tr>";
 		}
 		$content=$content."<tr><td><label for='inbal'>Bank balance & Cash at start of year - 1 January ".$finvalues['Year']."</label></td><td>£<input type='number' onwheel='this.blur();'  step='0.01'  class='textinput' id='inbal' name='inbal' value=".number_format(floatVal($finvalues['InBalance']),2,'.','')."></td></tr>";
